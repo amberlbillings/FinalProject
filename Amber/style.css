@@ -1,0 +1,28 @@
+.headline {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.by-the-numbers {
+    text-align: center;
+    font-size: 24px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.call-out-number {
+    font-weight: bold;
+    font-size: 48px;
+}
+
+.regression-box {
+    width: 100%;
+    height: 400px;
+    background-color: #D1B544;
+}
+
+.regression {
+    margin: auto;
+    text-align: center;
+    padding-top: 200px;
+}
