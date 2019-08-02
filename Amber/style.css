@@ -26,3 +26,35 @@
     text-align: center;
     padding-top: 200px;
 }
+
+.parallax { 
+    /* The image used */
+    background-image: url("images/AdobeStock_183561967-resize.jpg");
+  
+    /* Set a specific height */
+    height: 500px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+.data-viz {
+    height: 400px;
+    padding: 40px;
+    background-color: #eeeeee;
+    text-align: center;
+    padding-top: 180px;
+}
+
+.helpline {
+    background-color: #424242;
+    color: white;
+    padding: 40px;
+}
+
+.headline-bottom {
+    margin-top: 40px;
+}
