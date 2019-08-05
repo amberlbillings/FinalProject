@@ -18,7 +18,7 @@
 .regression-box {
     width: 100%;
     height: 400px;
-    background-color: #D1B544;
+    background-color: #EEEEEE;
 }
 
 .regression {
@@ -57,4 +57,32 @@
 
 .headline-bottom {
     margin-top: 40px;
+}
+
+.hero {
+    position: relative;
+    height: 350px;
+    padding: 20px;
+    margin: 0;
+    background: black;
+    background-image: url("images/opioids_promo_czoborraul_istock_thinkstock_4.jpg");
+    background-attachment: fixed;
+    background-position: bottom center;
+    background-size: cover;
+  }
+
+.red-bkg {
+    background-color: #A2352F;
+    color: white;
+    margin: 0px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.yellow-bkg {
+    background-color: #D1B544;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 8.33%;
+    padding-right: 8.33%;
 }
