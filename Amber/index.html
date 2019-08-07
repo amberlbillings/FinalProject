@@ -27,13 +27,13 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-right nav navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About the Data</a>
+                        <a class="nav-link" href="data.html">About the Data</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Team</a>
+                        <a class="nav-link" href="team.html">Team</a>
                     </li>
                 </ul>
             </div>
@@ -51,8 +51,21 @@
 
         <div class="row">
             <div class="col-md-1"></div>
-            <div class="col-md-10">
-                <h1><img src="images/DEATHS-VS-PILLS-xlarge.jpg" width="100%" style="margin-top: 40px" /></h1>
+            <div class="col-md-5">
+                <div class="data-viz" style="padding-top: 40px">
+                    <h4>Number of Opioids Distributed</h4>
+                    <p>2006-2012</p>
+                    <p style="margin-bottom: -5px; z-index: 2 !important;">0    <span style="margin-left: 21%"></span> 30 Million+</p>
+                    <img src="images/maps2.png" width="100%" style="z-index: 1" />
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="data-viz" style="padding-top: 40px">
+                        <h4>Overdose Deaths Involving Opioids</h4>
+                        <p>2006-2012</p>
+                        <p style="margin-bottom: -5px; z-index: 2 !important;">0    <span style="margin-left: 25%"></span> 10,000+</p>
+                        <img src="images/maps.png" width="100%" style="z-index: 1" />
+                </div>
             </div>
             <div class="col-md-1"></div>
         </div>
@@ -73,13 +86,75 @@
             </div>
         </div>
 
-        <div class="row">
-            <div class="col-md-12">
+        <div class="row" style="margin-bottom: 40px">
+                <div class="col-md-1"></div>
+                <div class="col-md-10">
+
+                            <div class="regression-box">
+                                    <h4>Opioid Pills Distributed vs. Overdose Deaths Involving Opioids</h4>
+                                    <p>Regression Model<br />
+                                    Deaths = 0.00034703 x [Quantity of Pills] + 37.30674402</p>
+                                    <script type='text/javascript' src='https://prod-useast-a.online.tableau.com/javascripts/api/viz_v1.js'></script>
+                                    <div class='tableauPlaceholder' style='width: 1200px; height: 427px;'>
+                                        <object class='tableauViz' width='1200' height='427' style='display:none;'>
+                                            <param name='host_url' value='https%3A%2F%2Fprod-useast-a.online.tableau.com%2F' /> 
+                                            <param name='embed_code_version' value='3' /> 
+                                            <param name='site_root' value='&#47;t&#47;amberbillingsuhg' />
+                                            <param name='name' value='OpioidsData-projection&#47;CorrelationQtyvsDeath' />
+                                            <param name='tabs' value='no' /><param name='toolbar' value='no' />
+                                            <param name='showAppBanner' value='false' />
+                                            <param name='filter' value='iframeSizedToWindow=true' />
+                                        </object>
+                                    </div>
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+
+        <div class="row"style="margin-bottom: 40px">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
                 <div class="regression-box">
-                <p class="regression">Regression model/machine learning stuff goes here.</p>
+                        <h4>Projected Overdose Deaths Involving Opioids</h4>
+                        <p>2013-2020</p>
+                        <script type='text/javascript' src='https://prod-useast-a.online.tableau.com/javascripts/api/viz_v1.js'></script>
+                        <div class='tableauPlaceholder' style='width: 1200px; height: 427px;'>
+                            <object class='tableauViz' width='1200' height='427' style='display:none;'>
+                                <param name='host_url' value='https%3A%2F%2Fprod-useast-a.online.tableau.com%2F' /> 
+                                <param name='embed_code_version' value='3' /> 
+                                <param name='site_root' value='&#47;t&#47;amberbillingsuhg' />
+                                <param name='name' value='OpioidsData-projection&#47;Dashboard3' />
+                                <param name='tabs' value='no' />
+                                <param name='toolbar' value='no' />
+                                <param name='showAppBanner' value='false' />
+                                <param name='filter' value='iframeSizedToWindow=true' />
+                            </object>
+                        </div>
+
                 </div>
             </div>
+            <div class="col-md-1"></div>
         </div>
+
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10"><hr /></div>
+            <div class="col-md-1"></div>
+        </div>
+
+        <div class="row" style="margin-top: 40px; margin-bottom: 80px;">
+                <div class="col-md-3"></div>
+                <div class="col-md-2">
+                    <div class="regression-box">
+                        <img src="images/dist_tree.png" width="100%"  />
+                    </div>
+                </div>
+                <div class="col-md-4" style="padding-top: 60px;">
+                        <h4>Distribution Tree Analysis</h4>
+                        <p>Number of opioids distributed is the biggest factor in determining how many overdose deaths will occur.</p>
+                </div>
+                <div class="col-md-3"></div>
+            </div>
 
         <div class="row headline yellow-bkg">
             <div class="col-md-4">
@@ -97,37 +172,87 @@
         </div>
 
         <div class="row headline">
-            <div class="col-md-6">
+            <div class="col-md-1"></div>
+            <div class="col-md-5">
                 <div class="data-viz">
-                  <p>Data Viz 1</p>
+                    <h4>Opioids Distributed vs. <br />Overdose Deaths Involving Opioids</h4>
+                    <p>2006-2012 | United States</p>
+                        <script type='text/javascript' src='https://prod-useast-a.online.tableau.com/javascripts/api/viz_v1.js'></script>
+                        <div class='tableauPlaceholder' style='width: 600px; height: 400px;'>
+                            <object class='tableauViz' width='600' height='400' style='display:none;'>
+                                <param name='host_url' value='https%3A%2F%2Fprod-useast-a.online.tableau.com%2F' /> 
+                                <param name='embed_code_version' value='3' /> <param name='site_root' value='&#47;t&#47;amberbillingsuhg' />
+                                <param name='name' value='Opioids_Workbook&#47;Dashboard1' /><param name='tabs' value='no' />
+                                <param name='toolbar' value='no' />
+                                <param name='showAppBanner' value='false' />
+                                <param name='filter' value='iframeSizedToWindow=true' />
+                            </object>
+                        </div>
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-5">
                 <div class="data-viz">
-                    <p>Data Viz 2</p>
+                        <h4>Top 10 Purchasers</h4>
+                        <p>2006-2012 | United States</p>
+                        <script type='text/javascript' src='https://prod-useast-a.online.tableau.com/javascripts/api/viz_v1.js'></script>
+                        <div class='tableauPlaceholder' style='width: 600px; height: 400px;'>
+                            <object class='tableauViz' width='600' height='400' style='display:none;'>
+                                <param name='host_url' value='https%3A%2F%2Fprod-useast-a.online.tableau.com%2F' /> 
+                                <param name='embed_code_version' value='3' /> 
+                                <param name='site_root' value='&#47;t&#47;amberbillingsuhg' />
+                                <param name='name' value='OpioidsData2&#47;Sheet11' />
+                                <param name='tabs' value='no' /><param name='toolbar' value='no' />
+                                <param name='showAppBanner' value='false' />
+                                <param name='filter' value='iframeSizedToWindow=true' />
+                            </object>
+                        </div>
                 </div>
             </div>
+            <div class="col-md-1"></div>
         </div>
 
+        
+
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
                 <div class="data-viz">
-                    <p>Data Viz 3</p>
+                        <div class="data-viz">
+                                <h4>Top 10 Distributors</h4>
+                                <p>2006-2012 | United States</p>
+                                <script type='text/javascript' src='https://prod-useast-a.online.tableau.com/javascripts/api/viz_v1.js'></script>
+                                <div class='tableauPlaceholder' style='width: 1200px; height: 400px;'>
+                                    <object class='tableauViz' width='1200' height='400' style='display:none;'>
+                                        <param name='host_url' value='https%3A%2F%2Fprod-useast-a.online.tableau.com%2F' /> 
+                                        <param name='embed_code_version' value='3' /> 
+                                        <param name='site_root' value='&#47;t&#47;amberbillingsuhg' />
+                                        <param name='name' value='OpioidsData2&#47;Dashboard3' />
+                                        <param name='tabs' value='no' />
+                                        <param name='toolbar' value='no' />
+                                        <param name='showAppBanner' value='false' />
+                                        <param name='filter' value='iframeSizedToWindow=true' />
+                                    </object>
+                                </div>
+                        </div>
                 </div>
             </div>
-            <div class="col-md-6">
-                <div class="data-viz">
-                    <p>Data Viz 4</p>
-                </div>
-            </div>
+            <div class="col-md-1"></div>
         </div>
 
         <div class="row headline-bottom helpline">
-            <div class="col-md-1"></div>
-            <div class="col-md-10">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
                 <h3>If you or someone you know is struggling with opioid dependency, call the National Helpline at <span style="color: #D1B544">1-800-662-4357</span>.</h3>
             </div>
-            <div class="col-md-1"></div>
+            <div class="col-md-2"></div>
+        </div>
+
+        <div class="row footer">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <p>Data Sources: The Washington Post, CDC</p>
+            </div>
+            <div class="col-md-2"></div>
         </div>
 
 
